@@ -273,7 +273,7 @@ void SetupWidget::replyFinished(const QString &response) {
 
   if (!is_paired) {
     mainLayout->setCurrentIndex(showQr);
-  } else if (!is_prime) {
+  } else if (is_prime) {
     showQr = false;
     mainLayout->setCurrentWidget(primeAd);
   } else {
